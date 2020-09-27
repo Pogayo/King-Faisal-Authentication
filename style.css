@@ -61,7 +61,7 @@ body {
   	transition: background-color 0.2s;
 }
 
-header, .toggle{
+header, .center, .toggle {
 	width:100%;
 	padding:20px;
 	display:flex;
@@ -70,14 +70,16 @@ header, .toggle{
 	color:#2868c7;
 	flex-direction:column;
 	
+	
 }
+
 
 header h1{
 	font-size:30px;
 }
 
 .navtop {
-	background-color: #2f3947;
+	background-color: #2868c7;
 	height: 60px;
 	width: 100%;
 	border: 0;

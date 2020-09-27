@@ -62,6 +62,11 @@ $message = '<p>Please click the following link to activate your account: <a href
 //echo "your activation code is:"
 //echo $uniqid
 echo 'Please check your email to activate your account!';
+echo "This is your activateion code".$uniqid."<br>"."<p>Please click <a href='activate.html'>this link to activate your account.</a></p>"; 
+
+
+
+
 
 } else {
 	// Something is wrong with the sql statement, check to make sure accounts table exists with all 3 fields.
@@ -75,3 +80,4 @@ echo 'Please check your email to activate your account!';
 }
 $con->close();
 ?>
+
