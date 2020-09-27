@@ -61,8 +61,8 @@ $message = '<p>Please click the following link to activate your account: <a href
 // mail($_POST['email'], $subject, $message, $headers);
 //echo "your activation code is:"
 //echo $uniqid
-echo 'Please check your email to activate your account!';
-echo "This is your activateion code".$uniqid."<br>"."<p>Please click <a href='activate.html'>this link to activate your account.</a></p>"; 
+echo 'Coming feature - Please check your email to activate your account!';
+echo "This is your activateion code".$uniqid."<br/><p>Please click <a href='activate.html'>this link to activate your account.</a></p>"; 
 
 
 
