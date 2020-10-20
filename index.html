@@ -8,29 +8,182 @@
 	</head>
 	<body>
 		<header>
-			<p>Welcome to</p>
-			<h1>King Faisal Hospital</h1>
+			<h1>Telco Churn Prediction</h1>
 </header>
 		<div class="login">
 			
-			<h1>Login</h1>
+			<h1>Enter your data </h1>
+			<!-- customerID	gender	SeniorCitizen	Partner	Dependents	tenure	PhoneService	MultipleLines	InternetService	OnlineSecurity	OnlineBackup	DeviceProtection	TechSupport	StreamingTV	StreamingMovies	Contract	PaperlessBilling	PaymentMethod	MonthlyCharges	TotalCharges -->
+
 			<form action="authenticate.php" method="post">
-				<label for="username">
-					<i class="fas fa-user"></i>
-				</label>
-				<input class="fields" type="text" name="username" placeholder="Username" id="username" required>
-				<label for="password">
-					<i class="fas fa-lock"></i>
-				</label>
-				<input class="fields" type="password" name="password" placeholder="Password" id="password" required>
-				<input type="submit" value="Login">
+               
+               <div>
+				<label for="gender">Gender:</label><br>
+				<input type="radio" id="male" name="gender" value="male">
+				<label for="male">Male </label><br>
+				<input type="radio" id="female" name="gender" value="female">
+				<label for="female">Female </label><br>
+               </div>
+
+               <div>
+				<label for="SeniorCitizen">Senior Citizen:</label><br>
+				<input type="radio" id="yes" name="SeniorCitizen" value="0">
+				<label for="SeniorCitizen-yes">Yes</label><br>
+				<input type="radio" id="no" name="SeniorCitizen" value="1">
+				<label for="SeniorCitizen-no">No </label><br>
+               </div>
+
+                <div>
+				<label for="Partner">Partner:</label><br>
+				<input type="radio" id="yes" name="Partner" value="Yes">
+				<label for="Partner-yes">Yes</label><br>
+				<input type="radio" id="no" name="Partner" value="No">
+				<label for="Partner-no">No </label><br>
+               </div>
+
+               <div>
+				<label for="Dependents">Dependents</label><br>
+				<input type="radio" id="yes" name="Dependents" value="Yes">
+				<label for="Dependents-yes">Yes</label><br>
+				<input type="radio" id="no" name="Dependents" value="No">
+				<label for="Dependents-no">No</label><br>
+               </div>
+
+                <div>
+				<label for="PhoneService">Phone Service</label><br>
+				<input type="radio" id="PhoneService-yes" name="PhoneService" value="Yes">
+				<label for="PhoneService-yes">Yes</label><br>
+				<input type="radio" id="PhoneService-no" name="PhoneService" value="No">
+				<label for="PhoneService-no">No</label><br>
+               </div>
+
+
+
+                <div>
+				<label for="MultipleLines">Multiple Lines</label><br>
+				<input type="radio" id="MultipleLines-yes" name="MultipleLines" value="Yes">
+				<label for="PhoneService-yes">Yes</label><br>
+				<input type="radio" id="MultipleLines-no" name="MultipleLines" value="No">
+				<label for="PhoneService-no">No</label><br>
+				<input type="radio" id="MultipleLines-nois" name="MultipleLines" value="No internet service">
+				<label for="MultipleLines-No internet service">'No internet service'</label><br>
+               </div>
+
+
+                <div>
+				<label for="InternetService">Internet Service</label><br>
+				<input type="radio" id="MultipleLines-yes" name="InternetService" value="DSL">
+				<label for="InternetService-yes">DSL</label><br>
+				<input type="radio" id="MultipleLines-nois" name="InternetService" value="Fiber optic">
+				<label for="InternetService-Fiber optic">Fiber optic</label><br>
+				<input type="radio" id="MultipleLines-no" name="InternetService" value="No">
+				<label for="InternetService-no">No</label><br>
+               </div>
+
+                <div>
+				<label for="OnlineSecurity">Online Security</label><br>
+				<input type="radio" id="OnlineSecurity-yes" name="OnlineSecurity" value="Yes">
+				<label for="OnlineSecurity-yes">Yes</label><br>
+				<input type="radio" id="MultipleLines-no" name="OnlineSecurity" value="No">
+				<label for="OnlineSecurity-no">No</label><br>
+				<input type="radio" id="OnlineSecurity-nois" name="OnlineSecurity" value="No internet service">
+				<label for="OnlineSecurity-No internet service">'No internet service'</label><br>
+               </div>
+
+                <div>
+				<label for="OnlineBackup">Online Backup</label><br>
+				<input type="radio" id="MultipleLines-yes" name="OnlineBackup" value="Yes">
+				<label for="OnlineBackup-yes">Yes</label><br>
+				<input type="radio" id="OnlineBackup-no" name="OnlineBackup" value="No">
+				<label for="OnlineBackup-no">No</label><br>
+				<input type="radio" id="OnlineBackup-nois" name="OnlineBackup" value="No internet service">
+				<label for="OnlineBackup-No internet service">'No internet service'</label><br>
+               </div>
+
+                <div>
+				<label for="DeviceProtection">Device Protection</label><br>
+				<input type="radio" id="DeviceProtection-yes" name="DeviceProtection" value="Yes">
+				<label for="DeviceProtectione-yes">Yes</label><br>
+				<input type="radio" id="DeviceProtection-no" name="DeviceProtection" value="No">
+				<label for="DeviceProtection-no">No</label><br>
+				<input type="radio" id="DeviceProtection-nois" name="DeviceProtection" value="No internet service">
+				<label for="DeviceProtection-No internet service">'No internet service'</label><br>
+               </div>
+
+                <div>
+				<label for="TechSupport">Tech Support</label><br>
+				<input type="radio" id="TechSupportn-yes" name="TechSupport" value="Yes">
+				<label for="TechSupport-yes">Yes</label><br>
+				<input type="radio" id="TechSupport-no" name="TechSupport" value="No">
+				<label for="TechSupport-no">No</label><br>
+				<input type="radio" id="TechSupport-nois" name="TechSupport" value="No internet service">
+				<label for="TechSupport-No internet service">No internet service</label><br>
+               </div>
+
+                <div>
+				<label for="StreamingTV">Streaming TV</label><br>
+				<input type="radio" id="StreamingTV-yes" name="StreamingTV" value="Yes">
+				<label for="StreamingTV-yes">Yes</label><br>
+				<input type="radio" id="StreamingTV-no" name="StreamingTV" value="No">
+				<label for="StreamingTV-no">No</label><br>
+				<input type="radio" id="StreamingTV-nois" name="StreamingTV" value="No internet service">
+				<label for="StreamingTV-No internet service">'No internet service'</label><br>
+               </div>
+
+                <div>
+				<label for="Streaming Movies">Streaming Movies</label><br>
+				<input type="radio" id="StreamingMovies-yes" name="StreamingMovies" value="Yes">
+				<label for="StreamingMovies-yes">Yes</label><br>
+				<input type="radio" id="StreamingMovies-no" name="StreamingMovies" value="No">
+				<label for="StreamingMovies-no">No</label><br>
+				<input type="radio" id="StreamingMovies-nois" name="StreamingMovies" value="No internet service">
+				<label for="StreamingMovies-No internet service">'No internet service'</label><br>
+               </div>
+
+
+                <div>
+				<label for="Contract">Contract</label><br>
+				<input type="radio" id="Contract-Month-to-month" name="Contract" value="Month-to-month">
+				<label for="Contract-Month-to-month">Month to month</label><br>
+				<input type="radio" id="Contract-One year" name="Contract" value="One year">
+				<label for="Contract-One year">One year</label><br>
+				<input type="radio" id="Contract-nois" name="Contract" value="Two year">
+				<label for="Contract-Two year">Two year</label><br>
+               </div>
+
+               <div>
+				<label for="PaperlessBilling">Paperless Billing</label><br>
+				<input type="radio" id="PaperlessBilling" name="PaperlessBilling" value="Yes">
+				<label for="PaperlessBilling-yes">Yes</label><br>
+				<input type="radio" id="PaperlessBilling-no" name="PaperlessBilling" value="No">
+				<label for="PaperlessBilling-no">No</label><br>
+               </div>
+
+                <div>
+				<label for="PaymentMethod">Payment Method</label><br>
+				<input type="radio" id="PaymentMethod-Electronic check" name="PaymentMethod" value="Electronic check">
+				<label for="PaymentMethod-Electronic check">Electronic check</label><br>
+				<input type="radio" id="PaymentMethod-Mailed check" name="PaymentMethod" value="Mailed check">
+				<label for="PaymentMethod-Mailed check">Mailed check</label><br>
+				<input type="radio" id="PaymentMethod-Bank transfer (automatic)" name="PaymentMethod" value="Bank transfer (automatic)">
+				<label for="PaymentMethod-Bank transfer (automatic)">Bank transfer (automatic)</label><br>
+				<input type="radio" id="PaymentMethod-Credit card (automatic)" name="PaymentMethod" value="Credit card (automatic)">
+				<label for="PaymentMethod-Credit card (automatic)">Credit card (automatic)</label><br>
+               </div>
+
+
+				<input class="fields" type="number" name="MonthlyCharges" placeholder="Monthly Charges" id="MonthlyCharges" required>
+
+				<input class="fields" type="number" name="TotalCharges" placeholder="Total Charges" id="TotalCharges" required>
+
+				<input class="fields" type="number" name="Tenure" placeholder="tenure" id="tenure" required>
+			
+
+
+				<input type="submit" value="Submit">
  
 			</form>
 			
 		</div>
-<div class="toggle">
-				<p> Don't have an account?</>
-				<a href="register.html">Register</a>
-</div>
 	</body>
 </html>
